@@ -1,6 +1,8 @@
 ![ClinicalJev v0.1 preview.](assets/hero.png)
 
-Compact medical models that run locally and return probabilities over predefined candidates. Built for medical decisions across tasks, with sensitive healthcare data kept inside your facility.
+**One model for new clinical classification tasks—without task-specific fine-tuning.**
+
+ClinicalJev is built for general-purpose clinical text classification. Define the task and candidate labels at inference time, and use the same model weights across tasks. Run locally and return probabilities over predefined candidates, while keeping sensitive healthcare data inside your facility.
 
 ## The model family
 
