@@ -260,5 +260,20 @@ print(json.dumps(classify(model, tokenizer, state, questions),
 
 For multi-label classification, supply one independent binary Choice question per label. Keep the formatter intact when substituting your own state, instructions, and criteria.
 
+
+## Potential applications
+
+ClinicalJev can serve as a candidate-based decision component for exploring the following clinical applications:
+
+- **Treatment recommendation support:** Assess the applicability of predefined treatment options using patient information and relevant clinical guidelines. Identify constraints, filter candidates, and prioritize options for clinician review.
+
+- **Medication recommendation support:** Compare medications and alternatives within a curated candidate set by checking patient history, prior treatment, and documented intolerance. Provide medication candidates for physician or pharmacist review.
+
+- **Patient–trial matching:** Assess clinical trial inclusion and exclusion criteria against patient information, distinguishing satisfied, unsatisfied, and insufficiently documented criteria. Support patient prescreening, trial recommendation, and identification of missing information.
+
+- **Tool selection and next-action decisions in medical agents:** Select the next step from predefined tools and actions based on the current workflow state, such as retrieving clinical evidence, invoking a calculation tool, requesting additional patient information, or escalating for human review.
+
+ClinicalJev returns candidate labels and probability scores through a consistent interface, facilitating integration with rule-based systems, knowledge bases, and agent workflows. Local deployment provides a basis for exploring low-latency, cost-efficient implementations. Recommendation quality, probability calibration, and efficiency gains require evaluation for each intended application.
+
 </details>
 
